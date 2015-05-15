@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>tags | Hexo</title>
+  <title>存储过程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233&amp;lt;?phpdefine(&apos;CLIENT_MULTI_RESULTS&apos;, 131072);$host=&apos;127.0.0.1&apos;;$dbname = &apos;test&apos;;$dbuser = &apos;root&apos;;$dbpswd = &apos;123456&apos;;$conn = mysql_connect($ho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="存储过程">
+<meta property="og:url" content="http://yoursite.com/2015/05/15/存储过程/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233&amp;lt;?phpdefine(&apos;CLIENT_MULTI_RESULTS&apos;, 131072);$host=&apos;127.0.0.1&apos;;$dbname = &apos;test&apos;;$dbuser = &apos;root&apos;;$dbpswd = &apos;123456&apos;;$conn = mysql_connect($ho">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description">
+<meta name="twitter:title" content="存储过程">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233&amp;lt;?phpdefine(&apos;CLIENT_MULTI_RESULTS&apos;, 131072);$host=&apos;127.0.0.1&apos;;$dbname = &apos;test&apos;;$dbuser = &apos;root&apos;;$dbpswd = &apos;123456&apos;;$conn = mysql_connect($ho">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -189,11 +189,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-存储过程" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tags/index.html" class="article-date">
-  	<time datetime="2015-05-15T03:10:48.000Z" itemprop="datePublished">2015-05-15</time>
+      <a href="/2015/05/15/存储过程/" class="article-date">
+  	<time datetime="2015-05-15T03:13:09.000Z" itemprop="datePublished">2015-05-15</time>
 </a>
     </div>
   
@@ -206,7 +206,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      存储过程
     </h1>
   
 
@@ -214,7 +214,15 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+	</div>
+
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/php/">php</a>
+	</div>
+
 
         <div class="clearfix"></div>
       </div>
@@ -222,7 +230,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line">define(<span class="string">'CLIENT_MULTI_RESULTS'</span>, <span class="number">131072</span>);</span><br><span class="line"><span class="variable">$host</span>=<span class="string">'127.0.0.1'</span>;</span><br><span class="line"><span class="variable">$dbname</span> = <span class="string">'test'</span>;</span><br><span class="line"><span class="variable">$dbuser</span> = <span class="string">'root'</span>;</span><br><span class="line"><span class="variable">$dbpswd</span> = <span class="string">'123456'</span>;</span><br><span class="line"><span class="variable">$conn</span> = mysql_connect(<span class="variable">$host</span>,<span class="variable">$dbuser</span>,<span class="variable">$dbpswd</span>,<span class="number">1</span>,CLIENT_MULTI_RESULTS) <span class="keyword">or</span> <span class="keyword">die</span>(<span class="string">'数据库链接失败：'</span>.mysql_error());</span><br><span class="line">mysql_select_db(<span class="variable">$dbname</span>);``</span><br><span class="line">``mysql_query(<span class="string">"DROP PROCEDURE IF EXISTS `my_test1`;"</span>,<span class="variable">$conn</span>);</span><br><span class="line"><span class="variable">$create_pro_sql</span> = <span class="string">"CREATE PROCEDURE `my_test1`(a INT,b INT)</span><br><span class="line">                     BEGIN</span><br><span class="line">                        DECLARE c INT;</span><br><span class="line">                        IF a IS NULL THEN SET a = 0;</span><br><span class="line">                        END IF;</span><br><span class="line">                        IF b IS NULL THEN SET b = 0;</span><br><span class="line">                        END IF;</span><br><span class="line">                        SET c = a + b;</span><br><span class="line">                        SELECT c AS SUM;</span><br><span class="line">                     END;"</span>;</span><br><span class="line">mysql_query(<span class="variable">$create_pro_sql</span>,<span class="variable">$conn</span>) <span class="keyword">or</span> <span class="keyword">die</span>(<span class="string">"语句错误:"</span>.mysql_error());</span><br><span class="line">mysql_query(<span class="string">"SET @a = 1"</span>,<span class="variable">$conn</span>);</span><br><span class="line">mysql_query(<span class="string">"SET @b = 2"</span>,<span class="variable">$conn</span>);</span><br><span class="line"><span class="variable">$run_pro_sql</span> = <span class="string">"CALL my_test1(@a,@b);"</span>;</span><br><span class="line"> </span><br><span class="line"><span class="variable">$result</span> = mysql_query(<span class="variable">$run_pro_sql</span>,<span class="variable">$conn</span>) <span class="keyword">or</span> <span class="keyword">die</span>(<span class="string">"语句错误:"</span>.mysql_error());</span><br><span class="line"> </span><br><span class="line"><span class="variable">$row</span> = mysql_fetch_row(<span class="variable">$result</span>);</span><br><span class="line"> </span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$row</span>[<span class="number">0</span>];</span><br><span class="line"> </span><br><span class="line">mysql_close(<span class="variable">$conn</span>);</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -252,7 +261,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="tags" data-url="http://yoursite.com/tags/index.html"></div>
+	<div class="ds-thread" data-thread-key="存储过程" data-title="存储过程" data-url="http://yoursite.com/2015/05/15/存储过程/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
